@@ -1,0 +1,105 @@
+.auth-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 25vh;
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+.auth-box-inner {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  min-height: 200px;  
+}
+
+.tab-header {
+  display: flex;
+  justify-content: space-around;
+  background: #f8f8f8;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px 0;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-weight: 500;
+}
+
+.tab:hover {
+  background: #f0f0f0;
+}
+
+.tab.active {
+  color: #ffffff;
+  background: #bdc2e2;
+  font-weight: 600;
+}
+
+.form-slider {
+  display: flex;
+  width: 200%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.form-slider.login {
+  transform: translateX(0%);
+}
+
+.form-slider.register {
+  transform: translateX(-50%);
+}
+
+.form-slide {
+  width: 50%;
+  padding: 25px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-slide input[type="text"],
+.form-slide input[type="email"],
+.form-slide input[type="password"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-slide input:focus {
+  outline: none;
+  border-color: #bdc2e2;
+  box-shadow: 0 0 5px rgba(132, 144, 158, 0.4);
+}
+
+.form-slide button,
+.form-slide input[type="submit"] {
+  margin-top: 10px;
+  padding: 12px;
+  background: #bdc2e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease ;
+}
+
+.form-slide button:hover,
+.form-slide input[type="submit"]:hover {
+  background: #bdc2e2;
+}

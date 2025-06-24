@@ -1,0 +1,102 @@
+.ad-form {
+  background-color: #ffffff;
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 420px;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ad-form-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.ad-input {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ad-input:focus {
+  border-color:  #bdc2e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+  outline: none;
+}
+
+.ad-button {
+  padding: 12px;
+  background-color: #bdc2e2;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.ad-button:hover {
+  background-color: #bdc2e2;
+}
+
+.ad-message {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: rgb(0 0 0 / 17%);
+  text-align: center;
+}
+
+.file-upload {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.file-label {
+  background-color:  #bdc2e2;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+  background-color: #bdc2e2;
+}
+
+.file-upload ImageUploader{
+  display: none;
+}
+
+.file-name {
+  font-size: 0.9rem;
+  color: #555;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ad-input select {
+  appearance: none;
+  background-color: white;
+  color: #333;
+}
+.file-note {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
