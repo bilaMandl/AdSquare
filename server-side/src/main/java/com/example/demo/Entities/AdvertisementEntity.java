@@ -32,9 +32,7 @@ public class AdvertisementEntity {
     AdPackage adPackage;
 
     public AdvertisementEntity() {
-
         id = UniqueId.generateUniqueId();
-
     }
 
     public AdvertisementEntity( int clicks, int areaNumber, String imageUrl,  Long adPackageId, Long customerId) {

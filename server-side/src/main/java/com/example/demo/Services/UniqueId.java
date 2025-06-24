@@ -17,7 +17,7 @@ public class UniqueId {
         try (BufferedReader reader = new BufferedReader(new FileReader(COUNTER_FILE))) {
             return Long.parseLong(reader.readLine());
         } catch (IOException | NumberFormatException e) {
-            return 0L; // אם הקובץ לא קיים או שגוי, מתחילים מ-0
+            return 0L; 
         }
     }
 
