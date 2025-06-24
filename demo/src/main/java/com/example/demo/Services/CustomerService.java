@@ -1,7 +1,6 @@
 
 package com.example.demo.Services;
 
-import com.example.demo.Entities.AdvertisementDto;
 import com.example.demo.Entities.CustomerDto;
 import com.example.demo.Entities.CustomerEntity;
 import com.example.demo.Rpositorys.CustomerRepository;

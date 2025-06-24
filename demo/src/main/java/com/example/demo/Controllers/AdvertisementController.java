@@ -25,7 +25,7 @@ public class AdvertisementController {
         try {
             Long adPackageId = request.getAdPackageId();
             Long customerId = request.getCustomerId();
-            String imageUrl = imageService.saveImage(file);
+            String imageUrl = this.imageService.saveImage(file);
             AdvertisementEntity advertisement = new AdvertisementEntity(request.getClicks(), request.getAreaNumber(), imageUrl, adPackageId, customerId);
             if (!this.advertisementService.createAdvertisement(advertisement, adPackageId, customerId))
                 return ResponseEntity.noContent().build();
@@ -44,7 +44,6 @@ public class AdvertisementController {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
-
 
     @GetMapping({"/all"})
     public ResponseEntity<List<AdvertisementDto>> getAll() {

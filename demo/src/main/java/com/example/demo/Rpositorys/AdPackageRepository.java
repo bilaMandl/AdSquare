@@ -11,5 +11,4 @@ import java.util.Optional;
 public interface AdPackageRepository extends CrudRepository<AdPackage, Long> {
     Optional<AdPackage> findByNumberOfClicksAndNumberOfDays(int numberOfClicks, int numberOfDays);
     AdPackage getById(Long id);
-
 }

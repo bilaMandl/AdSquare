@@ -19,7 +19,7 @@ public class ImageController {
     @PostMapping({"/upload"})
     public ResponseEntity<String> uploadImage(@RequestParam("file") MultipartFile file) {
         try {
-            String fileName = imageService.saveImage(file);
+            String fileName = this.imageService.saveImage(file);
             return ResponseEntity.ok(fileName);
         } catch (Exception e) {
             e.printStackTrace();
@@ -30,9 +30,9 @@ public class ImageController {
     @GetMapping({"/{imageName}"})
     public ResponseEntity<Resource> getImage(@PathVariable String imageName) {
         try {
-            Resource resource = imageService.loadImage(imageName);
+            Resource resource = this.imageService.loadImage(imageName);
             Path path = resource.getFile().toPath();
-            String contentType = imageService.getContentType(path);
+            String contentType = this.imageService.getContentType(path);
 
             return ResponseEntity.ok()
                     .contentType(MediaType.parseMediaType(contentType != null ? contentType : "application/octet-stream"))

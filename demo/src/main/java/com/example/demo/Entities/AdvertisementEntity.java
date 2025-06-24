@@ -3,6 +3,8 @@ import com.example.demo.Services.UniqueId;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,6 +13,7 @@ import lombok.Setter;
 )
 @Entity
 @Getter
+@Data
 @Setter
 public class AdvertisementEntity {
     @Id
@@ -42,7 +45,6 @@ public class AdvertisementEntity {
         this.isActive = true;
         this.creationDate = LocalDateTime.now();
         this.imageUrl = imageUrl;
-       
     }
 
 }
